@@ -1,0 +1,150 @@
+/* Geral da seção */
+.content-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    min-height: 100vh;
+    /* Garante que a seção ocupe toda a altura da tela */
+}
+
+/* Título */
+.features h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* Grid de funcionalidades */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Ajusta para dispositivos menores */
+    gap: 20px;
+    justify-content: center;
+    /* Centraliza horizontalmente os cards */
+    align-items: center;
+    /* Centraliza verticalmente os cards */
+    width: 100%;
+    /* Garante que o grid ocupe toda a largura */
+    max-width: 1200px;
+    /* Define um limite para a largura */
+}
+
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.feature-card .icon {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.feature-card .learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.feature-card .learn-more:hover {
+    text-decoration: underline;
+}
+
+/* Card com gradiente */
+.gradient-card {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+.gradient-card .icon {
+    color: white;
+}
+
+/* Seção de CTA */
+.cta-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite quebra em telas menores */
+    align-items: center;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    margin-top: 50px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    /* Espaçamento entre conteúdo e imagem */
+}
+
+.cta-content {
+    flex: 1;
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.cta-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* Centraliza os botões */
+}
+
+.cta-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cta-button.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.cta-button.primary:hover {
+    background-color: #0056b3;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.cta-button.secondary:hover {
+    background-color: #f2f2f2;
+}
+
+.cta-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
